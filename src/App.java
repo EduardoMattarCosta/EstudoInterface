@@ -3,6 +3,7 @@ import java.util.List;
 
 import Modelos.InterfaceModeloProduto;
 import Modelos.ModeloCliente;
+import Modelos.ModeloCursoDigital;
 import Modelos.ModeloProdutoDigital;
 import Modelos.ModeloProdutoFisico;
 
@@ -28,6 +29,7 @@ public class App {
         listaRetorno.add(new ModeloProdutoFisico("Mouse"));
         listaRetorno.add(new ModeloProdutoFisico("Teclado"));
         listaRetorno.add(new ModeloProdutoDigital("Trilogia Matrix - Digital"));
+        listaRetorno.add(new ModeloCursoDigital("Java Completo"));
 
         return listaRetorno;
     }

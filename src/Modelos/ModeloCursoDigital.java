@@ -1,10 +1,9 @@
 package Modelos;
 
-public class ModeloProdutoDigital extends ProdutoAbstrato implements InterfaceModeloProduto {    
-   
+public class ModeloCursoDigital extends ProdutoAbstrato implements InterfaceModeloProduto{
     private int totalDeDownloadsRestantes = 5;
 
-    public ModeloProdutoDigital(String titulo) {super(titulo);} 
+    public ModeloCursoDigital(String titulo) {super(titulo);} 
 
     public void EnviarProduto(ModeloCliente cliente){
         if(aOrdemFoiCompletada == false && totalDeDownloadsRestantes > 0){
@@ -18,5 +17,5 @@ public class ModeloProdutoDigital extends ProdutoAbstrato implements InterfaceMo
                 totalDeDownloadsRestantes = 0;
             }
         }
-    }
+    }    
 }
